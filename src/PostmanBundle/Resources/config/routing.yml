@@ -1,0 +1,11 @@
+pai_postman_Postman:
+    type: rest
+    prefix: /v1
+    resource: 'PostmanBundle\Controller\PostmanController'
+    name_prefix:  api_1_ # naming collision
+fos_user_security:
+    resource: '@FOSUserBundle/Resources/config/routing/security.xml'
+
+fos_user_register:
+    resource: '@FOSUserBundle/Resources/config/routing/registration.xml'
+    prefix: /register
